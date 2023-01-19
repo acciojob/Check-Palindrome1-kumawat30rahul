@@ -3,16 +3,14 @@
 function isPalindrome(s) {
     s = s.toLowerCase();
     s = s.replace(/[^a-z0-9]/g, "");
-    let isPalindrome = true;
-    let left = 0;
-    let right = s.length - 1;
-    s.split('').forEach(function() {
-        if(s[left] !== s[right]) {
-            isPalindrome = false;
-        }
-        left++;
-        right--;
-    });
+	let x = str.length-1
+   for(let i = 0;i<str.length;i++){
+	   if(str[i] != str[x]){
+		   return false
+	   }else{
+		   x--
+	   }
+   }
     return isPalindrome;
 }
 

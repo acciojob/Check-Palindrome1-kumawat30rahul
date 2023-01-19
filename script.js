@@ -11,7 +11,7 @@ function isPalindrome(s) {
 		   x--
 	   }
    }
-    return isPalindrome;
+    return true;
 }
 
 module.exports = palindrome
